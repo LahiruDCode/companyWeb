@@ -100,7 +100,7 @@ export default function About() {
       {/* ════════ HERO ════════ */}
       <section className="relative overflow-hidden" style={{ paddingTop: '9rem', paddingBottom: '5rem' }}>
         <div className="absolute inset-0 grid-pattern" style={{ opacity: 0.3 }} />
-        <div className="absolute" style={{ top: '5rem', left: 0, width: 500, height: 500, background: 'rgba(139,92,246,0.05)', borderRadius: '50%', filter: 'blur(120px)' }} />
+        <div className="responsive-circle absolute" style={{ top: '5rem', left: 0, background: 'rgba(139,92,246,0.05)', borderRadius: '50%', filter: 'blur(120px)' }} />
 
         <div className="relative page-container text-center">
           <motion.div
@@ -215,7 +215,7 @@ export default function About() {
             className="glass-card rounded-3xl relative overflow-hidden"
             style={{ padding: 'clamp(3rem, 5vw, 4rem)' }}
           >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2" style={{ width: 400, height: 300, background: 'rgba(6,182,212,0.1)', borderRadius: '50%', filter: 'blur(100px)' }} />
+            <div className="responsive-cta-circle absolute top-0 left-1/2 -translate-x-1/2 rounded-full" style={{ background: 'rgba(6,182,212,0.1)', filter: 'blur(100px)' }} />
             <div className="relative">
               <h2 className="font-bold text-white" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', marginBottom: '1rem' }}>
                 Ready to <span className="gradient-text">Experience the Difference?</span>

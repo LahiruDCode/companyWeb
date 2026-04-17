@@ -217,6 +217,36 @@ body {
   background-size: 60px 60px;
 }
 
+/* ── Responsive Decorative Shapes ── */
+.responsive-blob {
+  width: min(90vw, 800px);
+  height: min(75vw, 600px);
+}
+
+.responsive-circle {
+  width: min(80vw, 600px);
+  height: min(80vw, 600px);
+}
+
+.responsive-cta-circle {
+  width: min(75vw, 400px);
+  height: min(55vw, 300px);
+}
+
+@media (max-width: 640px) {
+  .page-container,
+  .page-container-sm,
+  .page-container-lg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .glass-card,
+  .glass {
+    min-width: 0;
+  }
+}
+
 /* ── Noise Texture ── */
 .noise::before {
   content: '';

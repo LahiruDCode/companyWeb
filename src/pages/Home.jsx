@@ -86,9 +86,9 @@ export default function Home() {
 
         {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/40 via-dark-900/70 to-dark-900" style={{ zIndex: 1 }} />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2" style={{ width: 800, height: 600, background: 'rgba(6,182,212,0.05)', borderRadius: '50%', filter: 'blur(150px)', zIndex: 1 }} />
+        <div className="responsive-blob absolute top-0 left-1/2 -translate-x-1/2 rounded-full" style={{ background: 'rgba(6,182,212,0.05)', filter: 'blur(150px)', zIndex: 1 }} />
 
-        <div className="relative page-container" style={{ zIndex: 10, paddingTop: '8rem', paddingBottom: '5rem' }}>
+        <div className="relative page-container hero-content" style={{ zIndex: 10, paddingTop: '8rem', paddingBottom: '5rem' }}>
           <div style={{ maxWidth: '48rem' }}>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -316,7 +316,7 @@ export default function Home() {
       {/* ════════ ROI CALCULATOR ════════ */}
       <section className="relative overflow-hidden" style={{ padding: '6rem 0 7rem' }}>
         <div className="absolute inset-0 grid-pattern" style={{ opacity: 0.3 }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style={{ width: 600, height: 600, background: 'rgba(6,182,212,0.05)', borderRadius: '50%', filter: 'blur(120px)' }} />
+        <div className="responsive-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: 'rgba(6,182,212,0.05)', filter: 'blur(120px)' }} />
 
         <div className="relative page-container-sm">
           <SectionHeading
@@ -429,7 +429,7 @@ export default function Home() {
             className="glass-card rounded-3xl text-center relative overflow-hidden"
             style={{ padding: 'clamp(3rem, 5vw, 4rem)' }}
           >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2" style={{ width: 400, height: 300, background: 'rgba(6,182,212,0.1)', borderRadius: '50%', filter: 'blur(100px)' }} />
+            <div className="responsive-cta-circle absolute top-0 left-1/2 -translate-x-1/2 rounded-full" style={{ background: 'rgba(6,182,212,0.1)', filter: 'blur(100px)' }} />
             <div className="relative">
               <h2 className="font-bold text-white" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', marginBottom: '1rem' }}>
                 Ready to <span className="gradient-text">Optimize</span> Your Revenue?
